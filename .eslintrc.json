@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none", // or "after-used", depending on how you want to treat function arguments
+        "ignoreRestSiblings": false
+      }
+    ]
+  }
+}
