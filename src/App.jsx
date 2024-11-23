@@ -1,9 +1,10 @@
-
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
 import Home from "./components/Home";
-const NavBar = lazy(() => import('./components/NavBar'));
+
+
+import NavBar from "./components/NavBar";
 const Places = lazy(() => import("./components/Places"));
 const Pahalgam = lazy(() => import("./ui/Pahalgam"));
 const Gulmarg = lazy(() => import("./ui/Gulmarg"));
@@ -15,18 +16,32 @@ const Ahrabal = lazy(() => import("./ui/Ahrabal"));
 const Dhoodhpathri = lazy(() => import("./ui/Dhoodpathri"));
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(true);
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timeout);
+  }, []);;
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <>
-      <SuspenseWithLoader>
-        <NavBar />
-      </SuspenseWithLoader>
+
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/places" element={<SuspenseWithLoader><Places /></SuspenseWithLoader>} />
         <Route path="/places/pahalgam" element={<SuspenseWithLoader><Pahalgam /></SuspenseWithLoader>} />
         <Route path="/places/gulmarg" element={<SuspenseWithLoader><Gulmarg /></SuspenseWithLoader>} />
         <Route path="/places/sonamarg" element={<SuspenseWithLoader><Sonamarg /></SuspenseWithLoader>} />
-        <Route path="/places/drung" element={<SuspenseWithLoader><Drung /></SuspenseWithLoader>} />
+        <Route path="/places/drung" element={<Drung />} />
         <Route path="/places/dhoodhpathri" element={<SuspenseWithLoader><Dhoodhpathri /></SuspenseWithLoader>} />
         <Route path="/places/ahrabal" element={<SuspenseWithLoader><Ahrabal /></SuspenseWithLoader>} />
         <Route path="/places/yusmmarg" element={<SuspenseWithLoader><Yusmarg /></SuspenseWithLoader>} />
@@ -36,6 +51,7 @@ function App() {
   );
 }
 
+// Reusable Suspense Wrapper with Loader
 const SuspenseWithLoader = ({ children }) => {
   return (
     <Suspense fallback={<Loader />}>

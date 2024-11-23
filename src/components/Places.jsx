@@ -93,6 +93,7 @@ const Places = () => {
                                                             src={slide.img}
                                                             alt={slide.text}
                                                             className="w-full h-auto object-cover"
+                                                            loading='lazy'
                                                       />
                                                 </Link>
                                           </SwiperSlide>

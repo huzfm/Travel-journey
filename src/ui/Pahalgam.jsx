@@ -69,8 +69,9 @@ const Pahalgam = () => {
                   <div style={bgStyles} className="flex flex-col md:flex-row items-center justify-center px-4 py-6 space-y-6 md:space-y-0 md:space-x-6">
                         <section className="mt-[200px] sm:mt-0 flex w-full md:w-[500px] h-auto text-base sm:text-lg md:text-xl lg:text-2xl p-6 rounded-lg bg-black/50 backdrop-blur-lg">
                               <p className="text-white text-justify">
-                                    Pahalgam is a cherished destination renowned for its natural beauty and tranquil ambiance...
+                                    Pahalgam, known as the Valley of Shepherds is a breathtakingly beautiful town in Jammu and Kashmir, nestled at the confluence of the Lidder River and Sheshnag Lake.This picturesque destination is not just a haven for nature lovers but also a hub for adventure enthusiasts, being the starting point of the revered Amarnath Yatra and offering exciting trekking trails to stunning locations like Aru Valley and Betaab Valley. The serene Lidder River adds to Pahalgam’s charm, offering opportunities for thrilling white-water rafting. Aru Valley, known for its peace and trekking trails, and Baisaran Valley, often called Mini Switzerland for its pristine beauty
                               </p>
+
                         </section>
 
                         <div className="w-full md:w-[1000px]">
