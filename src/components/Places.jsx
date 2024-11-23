@@ -23,7 +23,7 @@ const Places = () => {
       const [searchQuery, setSearchQuery] = useState('');
 
       const slidesData = [
-            { img: pahalgam, text: 'Pahalgam', link: '/places/pahalgam' },
+            { img: "https://images.pexels.com/photos/27138094/pexels-photo-27138094/free-photo-of-a-forested-area-with-a-river-running-through-it.jpeg?auto=compress&cs=tinysrgb&w=600", text: 'Pahalgam', link: '/places/pahalgam' },
             { img: sonamarg, text: 'Sonamarg', link: '/places/sonamarg' },
             { img: gulmarg, text: 'Gulmarg', link: '/places/gulmarg' },
             { img: drung, text: 'Drung Waterfall', link: '/places/drung' },

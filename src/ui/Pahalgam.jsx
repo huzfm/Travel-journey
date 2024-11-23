@@ -47,16 +47,28 @@ const Pahalgam = () => {
                               depth: 500,
                               modifier: 1,
                               slideShadows: true,
+
                         }}
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={2}
                   >
-                        {['nature-2', 'nature-3', 'nature-4', 'nature-5'].map((image, idx) => (
-                              <SwiperSlide key={idx}>
-                                    <img src={`https://swiperjs.com/demos/images/${image}.jpg`} alt={`Nature ${idx + 1}`} className="w-full h-auto" />
-                              </SwiperSlide>
-                        ))}
+                        <SwiperSlide>
+                              <img src='https://images.pexels.com/photos/8303561/pexels-photo-8303561.jpeg?auto=compress&cs=tinysrgb&w=600' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                              <img src='https://images.pexels.com/photos/11866027/pexels-photo-11866027.jpeg?auto=compress&cs=tinysrgb&w=600' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                              <img src='https://images.pexels.com/photos/25786712/pexels-photo-25786712/free-photo-of-scenic-view-of-a-green-valley-and-snowcapped-mountains-in-the-distance.jpeg?auto=compress&cs=tinysrgb&w=600' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                              <img src='https://images.pexels.com/photos/16151009/pexels-photo-16151009/free-photo-of-house-in-valley-among-hills.jpeg?auto=compress&cs=tinysrgb&w=600' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                              <img src='https://images.pexels.com/photos/8303561/pexels-photo-8303561.jpeg?auto=compress&cs=tinysrgb&w=600' />
+                        </SwiperSlide>
                   </Swiper>
 
                   <div className="pt-5 pb-5">
