@@ -2,7 +2,7 @@ import { useState } from "react";
 // npm install react-hook-form @web3forms/react
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
-import abc from '../assets/abc.jpg'
+import bg from '../assets/bg.webp'
 
 export default function Contact() {
       const bgStyles = {
@@ -39,7 +39,7 @@ export default function Contact() {
 
       return (
             <div className="flex justify-center items-center min-h-screen bg-gray-100 px-10 py-10" id='contact'
-                  style={{ ...bgStyles, backgroundImage: `url(${abc})` }}
+                  style={{ ...bgStyles, backgroundImage: `url(${bg})` }}
             >
                   <div className="w-full max-w-lg  backdrop-blur-sm shadow-md rounded-lg p-6 space-y-6">
                         <h1 className="text-2xl font-bold text-white text-center">

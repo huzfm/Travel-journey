@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import abc from '../assets/abc.jpg';
+import bg from '../assets/bg.webp';
 import Scroll from "../components/Scroll";
 import Footer from "../components/Footer";
 import ReactPlayer from 'react-player';
@@ -24,7 +24,7 @@ const Pahalgam = () => {
             backgroundRepeat: 'no-repeat',
             height: '100vh',
             width: '100%',
-            backgroundImage: `url(${abc})`,
+            backgroundImage: `url(${bg})`,
       }), []);
 
       return (
@@ -38,7 +38,7 @@ const Pahalgam = () => {
                   {/* Swiper Section */}
                   <Swiper
                         effect={'coverflow'}
-                        grabCursor={true}
+                        grbgursor={true}
                         centeredSlides={true}
                         slidesPerView={'auto'}
                         coverflowEffect={{

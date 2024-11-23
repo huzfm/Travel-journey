@@ -1,4 +1,4 @@
-import abc from '../assets/abc.jpg';
+import bg from '../assets/bg.webp';
 import Scroll from "../components/Scroll";
 import Footer from "../components/Footer";
 import ReactPlayer from 'react-player';
@@ -26,7 +26,7 @@ const Gulmarg = () => {
       };
 
       return (
-            <div className="relative" style={{ ...bgStyles, backgroundImage: `url(${abc})` }}>
+            <div className="relative" style={{ ...bgStyles, backgroundImage: `url(${bg})` }}>
                   <div className="flex justify-center items-center pt-10">
                         <button className=" text-white  backdrop-blur-lg px-20 py-5 rounded-md font-bold   transition-all duration-300">
                               <Weather location={location} />
@@ -40,7 +40,7 @@ const Gulmarg = () => {
                   {/* Swiper Section */}
                   <Swiper
                         effect={'coverflow'}
-                        grabCursor={true}
+                        grbgursor={true}
                         centeredSlides={true}
                         slidesPerView={'auto'}
                         coverflowEffect={{
@@ -76,7 +76,7 @@ const Gulmarg = () => {
 
                   {/* Section with Description & Map */}
                   <div
-                        style={{ ...bgStyles, backgroundImage: `url(${abc})` }}
+                        style={{ ...bgStyles, backgroundImage: `url(${bg})` }}
                         className="flex flex-col md:flex-row items-center justify-center px-4 py-6 space-y-6 md:space-y-0 md:space-x-6 mt-10"
                   >
                         <section className="mt-[200px] sm:mt-0 flex w-full md:w-[500px] h-auto text-base sm:text-lg md:text-xl lg:text-2xl p-6 rounded-lg bg-black/50 backdrop-blur-lg">
@@ -104,7 +104,7 @@ const Gulmarg = () => {
                   {/* Video Section */}
 
                   <div className="px-4 py-10 sm:pt-rounded-sm mt-[200px] sm:mt-0"
-                        style={{ ...bgStyles, backgroundImage: `url(${abc})` }}
+                        style={{ ...bgStyles, backgroundImage: `url(${bg})` }}
                   >
                         <div className="flex justify-center items-center pt-20" style={{ height: "500px" }}>
                               <ReactPlayer

@@ -161,7 +161,7 @@ import article1 from '../assets/articles/article1.webp'
 import article2 from '../assets/articles/article2.webp'
 import article3 from '../assets/articles/article3.webp'
 
-import abc from '../assets/abc.jpg';
+import bg from '../assets/bg.webp';
 
 import Footer from './Footer';
 import Scroll from './Scroll';
@@ -179,7 +179,7 @@ const Home = () => {
       return (
             <div className="flex flex-col min-h-screen">
                   {/* <Navbar /> */}
-                  <div className="flex-1" style={{ ...bgStyles, backgroundImage: `url(${abc})` }}>
+                  <div className="flex-1" style={{ ...bgStyles, backgroundImage: `url(${bg})` }}>
                         <section className="flex items-center justify-center py-10 ">
                               <div
                                     className="relative overflow-hidden  "
@@ -233,7 +233,7 @@ const Home = () => {
                         <div
                               className="flex justify-center items-center h-[500px] pt-5"
                               style={{
-                                    backgroundImage: `url(${abc})`,
+                                    backgroundImage: `url(${bg})`,
                                     backgroundSize: '100% auto', // Keep width 100%, auto-adjust the height
                                     backgroundPosition: 'center',
                                     backgroundRepeat: 'no-repeat',

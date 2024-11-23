@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import abc from '../assets/abc.jpg';
+import bg from '../assets/bg.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -48,7 +48,7 @@ const Places = () => {
       return (
             <div
                   className="flex flex-col min-h-screen"
-                  style={{ backgroundImage: `url(${abc})`, ...bgStyles }}
+                  style={{ backgroundImage: `url(${bg})`, ...bgStyles }}
             >
                   {/* Search Bar */}
                   <div className="relative pt-[100px]">
