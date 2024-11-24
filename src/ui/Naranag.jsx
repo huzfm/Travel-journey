@@ -14,6 +14,7 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Naranag = () => {
       const location = "Naranag"
@@ -54,18 +55,19 @@ const Naranag = () => {
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={2}
                   >
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/632209931/photo/local-man-sitting-at-ruins-of-naranag-temple-naranag-valley-gandarbat-jammu-kashmir-india.jpg?s=612x612&w=0&k=20&c=W3Y6QsVUXF88OpCeg48TS1puvAYYTE6YSpohs9L58i4=" alt="Nature 2" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1540692010/photo/kangan-india-indian-tourists-in-naranag-temple-basin-jammu-and-kashmir-kangan-india-on-june.jpg?s=612x612&w=0&k=20&c=Y6BIjOPC2KLfpkIWSwGDHgsY2hBCe57lYvZOsfXOQFM=" alt="Nature 3" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1540665559/photo/kangan-india-ruins-of-naranag-temple-on-ancient-hindu-pilgrimage-site-jammu-and-kashmir.jpg?s=612x612&w=0&k=20&c=A4n8ReHf-0DyW4lpJqhFEDRLrLZcpaD2s-8YfNQh-K4=" alt="Nature 4" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1540661560/photo/kangan-india-ruins-of-naranag-temple-on-ancient-hindu-pilgrimage-site-jammu-and-kashmir.jpg?s=612x612&w=0&k=20&c=D0fubiTMvB5vYc8TiB4QPFhpWJxo5Pie_XCochKHHMQ=" alt="Nature 5" className="w-full h-auto" />
                         </SwiperSlide>
                   </Swiper>
 
@@ -74,7 +76,7 @@ const Naranag = () => {
                               <Scroll />
                         </div>
                   </div>
-
+                  <Swipe />
 
                   {/* Section with Description & Map */}
                   <div

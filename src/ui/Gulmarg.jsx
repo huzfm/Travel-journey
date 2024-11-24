@@ -14,6 +14,7 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Gulmarg = () => {
       const location = "Gulmarg"
@@ -53,18 +54,22 @@ const Gulmarg = () => {
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={2}
                   >
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/532959878/photo/gulmarg-high-peaks.jpg?s=612x612&w=0&k=20&c=uQi-PwVPOhJBvba63DPg9k6Cyqud5v7UgE0xLiXnJ58=" alt="Nature 2" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/516364306/photo/snow-scape-with-mountains-and-trees-in-kashmir.jpg?s=612x612&w=0&k=20&c=ra-dObcecgA-CY3ToZ7REtTxp20AuXXS3FSiyH7CMjg=" alt="Nature 3" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/665366534/photo/gandola-cable-car-in-gulmarg.jpg?s=612x612&w=0&k=20&c=15HVHYGv3e0AVTLI5B1W1RzIVAOsiAXvqFgfsbVsJYg=" alt="Nature 4" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/471791181/photo/snowboarding.jpg?s=612x612&w=0&k=20&c=-8D4wQfNTyLYvkjtHhDnHEfxuhlijPSim_Nne1kSoLI=" alt="Nature 5" className="w-full h-auto" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                              <img src="https://media.istockphoto.com/id/1045556518/photo/man-jumping-with-snowboard.jpg?s=612x612&w=0&k=20&c=YSN9Yr69wGatkpYLXGhJtQ9NIDXfMvlUwclqOzZl1vQ=" alt="Nature 6" className="w-full h-auto" />
                         </SwiperSlide>
                   </Swiper>
 
@@ -73,6 +78,7 @@ const Gulmarg = () => {
                               <Scroll />
                         </div>
                   </div>
+                  <Swipe />
 
                   {/* Section with Description & Map */}
                   <div

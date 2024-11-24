@@ -44,7 +44,7 @@ function App() {
         <Route path="/places/drung" element={<SuspenseWithLoader><Drung /></SuspenseWithLoader>} />
         <Route path="/places/dhoodhpathri" element={<SuspenseWithLoader><Dhoodhpathri /></SuspenseWithLoader>} />
         <Route path="/places/ahrabal" element={<SuspenseWithLoader><Ahrabal /></SuspenseWithLoader>} />
-        <Route path="/places/yusmmarg" element={<SuspenseWithLoader><Yusmarg /></SuspenseWithLoader>} />
+        <Route path="/places/yusmarg" element={<SuspenseWithLoader><Yusmarg /></SuspenseWithLoader>} />
         <Route path="/places/naranag" element={<SuspenseWithLoader><Naranag /></SuspenseWithLoader>} />
       </Routes>
     </>

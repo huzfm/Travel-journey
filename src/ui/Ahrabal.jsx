@@ -14,9 +14,10 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Ahrabal = () => {
-      const location = "Ahrabal"
+      const location = "Aharbal"
       const bgStyles = {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -54,18 +55,19 @@ const Ahrabal = () => {
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={2}
                   >
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1246170483/photo/kulgam-jammu-and-kashmir-india-a-view-of-partially-frozen-waterfall-of-aharbal-during-a-cold.jpg?s=612x612&w=0&k=20&c=GS4N-a0kIfguCd2TH807tbsSDfWsNGS4feYEupuEt0I=" alt="Nature 2" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1242676089/photo/a-general-view-of-the-aharbal-waterfall-also-known-as-niagara-waterfall-of-kashmir-in-kulgam.jpg?s=612x612&w=0&k=20&c=j4DJByYAz8d0BX1-3oKPPkZu8fdYkHGjRYoFaPnK9FQ=" alt="Nature 3" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1242675849/photo/visitors-explore-the-aharbal-waterfall-also-known-as-niagara-waterfall-of-kashmir-in-kulgam.jpg?s=612x612&w=0&k=20&c=m4QGVUx0AufQuegl5RGUT0eA0j4W7FTMigRsNChpMDo=" alt="Nature 4" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1156970801/photo/aharbal-kulgam-india-river-veshu-flows-under-the-foothill-of-himalayas-during-a-cloudy-day-in.jpg?s=612x612&w=0&k=20&c=AXwXTcaDeiFoj9Zc21U2Izk0fY9pKvsR7gkf8MKP5B4=" alt="Nature 5" className="w-full h-auto" />
                         </SwiperSlide>
                   </Swiper>
 
@@ -75,7 +77,7 @@ const Ahrabal = () => {
                         </div>
                   </div>
 
-
+                  <Swipe />
                   {/* Section with Description & Map */}
                   <div
                         style={{ ...bgStyles, backgroundImage: `url(${bg})` }}

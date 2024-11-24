@@ -14,6 +14,7 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Yusmarg = () => {
       const location = "Yusmarg"
@@ -54,18 +55,19 @@ const Yusmarg = () => {
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={2}
                   >
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/987796500/photo/yusmarg.jpg?s=612x612&w=0&k=20&c=Zo0TNlCEaHWJuf2A-3nj07G30l8ye_oU0ozr8IuirOs=" alt="Nature 2" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1540651088/photo/yusmarg-india-indian-men-fishing-in-a-lake-jammu-and-kashmir-yusmarg-india-on-june-13-2023-in.jpg?s=612x612&w=0&k=20&c=ixR6FBhx1qvDprKNw1O7GlMk05PHnWaYIwc11tMT24g=" alt="Nature 3" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1540523522/photo/yusmarg-india-horse-in-the-meadow-jammu-and-kashmir-yusmarg-india-on-june-13-2023-in-yusmarg.jpg?s=612x612&w=0&k=20&c=9j-SP7ZmaTUNZJRog-4kH1gpxBBd8MuUGBrh1pY-uSs=" alt="Nature 4" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/1517813273/photo/yusmarg-jammu-and-kashmir-india-a-kashmiri-man-works-at-a-wild-flower-field-in-yusmarg-some.jpg?s=612x612&w=0&k=20&c=mQpuyaJOXFwAiluFExVBDksBVmj54YtXbwG1vYnehJo=" alt="Nature 5" className="w-full h-auto" />
                         </SwiperSlide>
                   </Swiper>
 
@@ -75,6 +77,7 @@ const Yusmarg = () => {
                         </div>
                   </div>
 
+                  <Swipe />
 
                   {/* Section with Description & Map */}
                   <div

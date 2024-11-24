@@ -14,6 +14,7 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Pahalgam = () => {
       const location = "Pahalgam";
@@ -76,6 +77,7 @@ const Pahalgam = () => {
                               <Scroll />
                         </div>
                   </div>
+                  <Swipe />
 
                   {/* Description & Map Section */}
                   <div style={bgStyles} className="flex flex-col md:flex-row items-center justify-center px-4 py-6 space-y-6 md:space-y-0 md:space-x-6">
