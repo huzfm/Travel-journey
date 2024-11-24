@@ -9,28 +9,22 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './Places.css';
 import Footer from './Footer';
-import pahalgam from '../assets/places/pahalgam.webp';
-import sonamarg from '../assets/places/sonamarg.webp';
-import gulmarg from '../assets/places/gulmarg.webp';
-import drung from '../assets/places/drung.webp';
-import doodhpathri from '../assets/places/doodhpathri.webp';
-import aharbal from '../assets/places/aharbal.webp';
-import Yusmarg from '../assets/places/Yusmarg.webp';
-import naranag from '../assets/places/naranag.webp';
+
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from './Swipe';
 
 const Places = () => {
       const [searchQuery, setSearchQuery] = useState('');
 
       const slidesData = [
             { img: "https://images.pexels.com/photos/27138094/pexels-photo-27138094/free-photo-of-a-forested-area-with-a-river-running-through-it.jpeg?auto=compress&cs=tinysrgb&w=600", text: 'Pahalgam', link: '/places/pahalgam' },
-            { img: sonamarg, text: 'Sonamarg', link: '/places/sonamarg' },
-            { img: gulmarg, text: 'Gulmarg', link: '/places/gulmarg' },
-            { img: drung, text: 'Drung Waterfall', link: '/places/drung' },
-            { img: doodhpathri, text: 'Dhoodhpathri', link: '/places/dhoodhpathri' },
-            { img: aharbal, text: 'Aharbal Waterfall', link: '/places/ahrabal' },
-            { img: Yusmarg, text: 'Yusmarg', link: '/places/yusmarg' },
-            { img: naranag, text: 'Naranag', link: '/places/naranag' },
+            { img: "https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c29ubWFyZ3xlbnwwfHwwfHx8MA%3D%3D", text: 'Sonamarg', link: '/places/sonamarg' },
+            { img: "https://images.pexels.com/photos/15232505/pexels-photo-15232505/free-photo-of-chalets-at-a-skiing-resort.jpeg?auto=compress&cs=tinysrgb&w=600", text: 'Gulmarg', link: '/places/gulmarg' },
+            { img: "https://images.pexels.com/photos/11121858/pexels-photo-11121858.jpeg?auto=compress&cs=tinysrgb&w=600", text: 'Drung Waterfall', link: '/places/drung' },
+            { img: "https://vargiskhan.com/log/wp-content/uploads/2018/09/doodhpathri-3.jpg", text: 'Dhoodhpathri', link: '/places/dhoodhpathri' },
+            { img: "https://vargiskhan.com/log/wp-content/uploads/2018/09/srinagar-to-aharbal-4.jpg", text: 'Aharbal Waterfall', link: '/places/ahrabal' },
+            { img: "https://www.kashmirhills.com/wp-content/uploads/2024/01/Yusmarg-KAHMIRHILLS3.jpg", text: 'Yusmarg', link: '/places/yusmarg' },
+            { img: "https://media.gettyimages.com/id/632209937/photo/ruins-of-naranag-temple-naranag-valley-gandarbat-jammu-kashmir-india.jpg?s=612x612&w=0&k=20&c=7trkTKMI5n5_NwvNEfGddS3aLIrcriyEeWdPgPszlcY=", text: 'Naranag', link: '/places/naranag' },
       ];
 
       const filteredSlides = slidesData.filter((slide) =>
@@ -107,6 +101,7 @@ const Places = () => {
                                     </p>
                               </div>
                         )}
+                        <Swipe />
                   </div>
 
                   <Footer />

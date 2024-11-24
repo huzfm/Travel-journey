@@ -14,6 +14,7 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Dhoodhpathri = () => {
       const location = "Dhoodhpathri"
@@ -54,18 +55,19 @@ const Dhoodhpathri = () => {
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={2}
                   >
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/971355784/photo/doodhpathri-budgam-jammu-kashmir-india-a-general-view-of-meadows-of-doodhpathri-valley-some-50.jpg?s=612x612&w=0&k=20&c=DCD2jy84hf0cX5hD__CXXFAe0ZSgAF55PSSJRN4Mm_Q=" alt="Nature 2" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/971355604/photo/doodhpathri-budgam-jammu-kashmir-india-nomad-baqarwal-boys-riding-ponies-in-meadows-of.jpg?s=612x612&w=0&k=20&c=moXQ8P7Dtwg9nygm3qMKtW4NVDeC1eFP1itVaCbhlv4=" alt="Nature 3" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/971355466/photo/doodhpathri-budgam-jammu-kashmir-india-a-general-view-of-meadows-of-doodhpathri-valley-some-50.jpg?s=612x612&w=0&k=20&c=BZUpAr8VS9tfgp7XHrPVB5NdtHGl36kzXgAaKx3GCyg=" alt="Nature 4" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" className="w-full h-auto" />
+                              <img src="https://media.gettyimages.com/id/971355940/photo/doodhpathri-budgam-jammu-kashmir-india-a-nomad-baqarwal-kids-plays-on-the-rooftop-of-their-mud.jpg?s=612x612&w=0&k=20&c=nW26nB7sVUWDUjCI_iLyV-2XHcIAAAWIN2D-7F5OdlE=" alt="Nature 5" className="w-full h-auto" />
                         </SwiperSlide>
                   </Swiper>
 
@@ -74,7 +76,7 @@ const Dhoodhpathri = () => {
                               <Scroll />
                         </div>
                   </div>
-
+                  <Swipe />
 
                   {/* Section with Description & Map */}
                   <div

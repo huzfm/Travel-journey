@@ -1,5 +1,6 @@
+
+
 import { useState } from "react";
-// npm install react-hook-form @web3forms/react
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import bg from '../assets/bg.webp'
@@ -16,6 +17,7 @@ export default function Contact() {
 
       const [isSuccess, setIsSuccess] = useState(false);
       const [result, setResult] = useState(null);
+      const [loading, setLoading] = useState(false); // Track loading state
 
       const accessKey = "6a608ecc-53a2-4ecf-9528-bfa5890a7563";
 
@@ -30,24 +32,31 @@ export default function Contact() {
                   setIsSuccess(true);
                   setResult(msg);
                   reset();
+                  setLoading(false); // Stop loading when the form is submitted successfully
             },
             onError: (msg) => {
                   setIsSuccess(false);
                   setResult(msg);
+                  setLoading(false); // Stop loading if there's an error
             },
       });
+
+      const handleFormSubmit = async (data) => {
+            setLoading(true); // Start loading when form submission begins
+            await onSubmit(data);
+      };
 
       return (
             <div className="flex justify-center items-center min-h-screen bg-gray-100 px-10 py-10" id='contact'
                   style={{ ...bgStyles, backgroundImage: `url(${bg})` }}
             >
-                  <div className="w-full max-w-lg  backdrop-blur-sm shadow-md rounded-lg p-6 space-y-6">
+                  <div className="w-full max-w-lg backdrop-blur-sm shadow-md rounded-lg p-6 space-y-6">
                         <h1 className="text-2xl font-bold text-white text-center">
                               Contact Us
                         </h1>
 
                         <form
-                              onSubmit={handleSubmit(onSubmit)}
+                              onSubmit={handleSubmit(handleFormSubmit)} // Use the custom submit handler
                               className="space-y-4"
                         >
                               <div>
@@ -101,9 +110,16 @@ export default function Contact() {
                               <div>
                                     <button
                                           type="submit"
-                                          className="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 "
+                                          className="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 disabled:bg-indigo-400"
+                                          disabled={loading} // Disable button while loading
                                     >
-                                          Submit Form
+                                          {loading ? (
+                                                <div className="flex justify-center items-center">
+                                                      <div className="animate-spin h-5 w-5 border-t-2 border-b-2 border-black rounded-full"></div>
+                                                </div>
+                                          ) : (
+                                                "Submit Form"
+                                          )}
                                     </button>
                               </div>
                         </form>

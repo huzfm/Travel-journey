@@ -14,6 +14,7 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Sonamarg = () => {
       const location = "Sonamarg";
@@ -60,18 +61,19 @@ const Sonamarg = () => {
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={2}
                   >
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/908264094/photo/sheep-graze-on-grass-up-in-the-mountains-during-kashmir-great-lakes-trek-in-sonamarg-jammu-and.jpg?s=612x612&w=0&k=20&c=PI-IIAfg1_iLlKCiH73OUID8AxDe9i9WelnzB3NG888=" alt="Nature 2" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/1453419625/photo/scenic-view-of-a-river-flowing-through-the-sonamarg-hill-trek-in-jammu-and-kashmir-india.jpg?s=612x612&w=0&k=20&c=nosiSGKbXVTUhqaXBq43k2Wo9ocyEH3Kigx2liwVwR4=" alt="Nature 3" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/1861559099/photo/glacial-river.jpg?s=612x612&w=0&k=20&c=dKQ5-OLHuSHrDuvhLSpCxSx-qx_VWli4yvNPdC9YcMo=" alt="Nature 4" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" className="w-full h-auto" />
+                              <img src="https://media.istockphoto.com/id/1441074435/photo/tarsar-marsar-trek-in-kashmir.jpg?s=612x612&w=0&k=20&c=WeoMGKazRVlZs9V919VhZjtdqf2C-0bi71oVWG6HKhM=" alt="Nature 5" className="w-full h-auto" />
                         </SwiperSlide>
                   </Swiper>
 
@@ -80,6 +82,7 @@ const Sonamarg = () => {
                               <Scroll />
                         </div>
                   </div>
+                  <Swipe />
 
                   {/* Section with Description & Map */}
                   <div

@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import './Places.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-
+import bg from '../assets/bg.webp'
 
 
 
@@ -15,7 +15,7 @@ import article1 from '../assets/articles/article1.webp'
 import article2 from '../assets/articles/article2.webp'
 import article3 from '../assets/articles/article3.webp'
 
-import bg from '../assets/bg.webp';
+// import bg from '../assets/bg.webp';
 
 import Footer from './Footer';
 import Scroll from './Scroll';
@@ -27,6 +27,7 @@ const Home = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
       };
+
 
 
 
@@ -60,12 +61,12 @@ const Home = () => {
                                           initialSlide={1}
                                     >
                                           <SwiperSlide>
+                                                <img src="https://images.pexels.com/photos/19082137/pexels-photo-19082137/free-photo-of-autumn-leaves-in-the-park.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                                          </SwiperSlide>
+                                          <SwiperSlide>
                                                 <img src="https://images.pexels.com/photos/25786569/pexels-photo-25786569/free-photo-of-a-boat-on-a-lake.jpeg?auto=compress&cs=tinysrgb&w=600"
                                                       loading='lazy'
                                                 />
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <img src="https://images.pexels.com/photos/19082137/pexels-photo-19082137/free-photo-of-autumn-leaves-in-the-park.jpeg?auto=compress&cs=tinysrgb&w=600" />
                                           </SwiperSlide>
                                           <SwiperSlide>
                                                 <img src="https://images.pexels.com/photos/27496409/pexels-photo-27496409/free-photo-of-gulmarg.jpeg?auto=compress&cs=tinysrgb&w=600" />
@@ -76,14 +77,18 @@ const Home = () => {
 
 
                               </div>
-                              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black font-name2 text-lg sm:text-sm lg:text-5xl font-bold z-10 w-[400px] sm:w-[800px] md:w-[1000px] text-center">
+                              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black font-name2     text-lg sm:text-sm lg:text-5xl font-black z-10 w-[400px] sm:w-[800px] md:w-[1000px] text-center ">
                                     If there is a paradise on earth,
                                     It is this,it is this
                               </p>
 
                         </section>
+                        <div className="pt-5 pb-5">
+                              <div className="hidden sm:block">
+                                    <Scroll />
+                              </div>
+                        </div>
 
-                        <Scroll />
 
                         <div
                               className="flex justify-center items-center h-[500px] pt-5"

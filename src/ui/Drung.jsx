@@ -14,6 +14,7 @@ import Weather from "../components/Weather";
 
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Swipe from '../components/Swipe';
 
 const Drung = () => {
       const location = "Drung"
@@ -54,19 +55,18 @@ const Drung = () => {
                         pagination={{ clickable: true }}  // Add clickable option for pagination
                         modules={[EffectCoverflow, Pagination]}  // Import necessary Swiper modules
                         className="mySwiper"
+                        initialSlide={1}
                   >
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" className="w-full h-auto" />
+                              <img src="https://images.pexels.com/photos/11121860/pexels-photo-11121860.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature 2" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" className="w-full h-auto" />
+                              <img src="https://images.pexels.com/photos/19339659/pexels-photo-19339659/free-photo-of-waterfall-on-rocks.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature 3" className="w-full h-auto" />
                         </SwiperSlide>
                         <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" className="w-full h-auto" />
+                              <img src="https://images.pexels.com/photos/11121854/pexels-photo-11121854.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature 4" className="w-full h-auto" />
                         </SwiperSlide>
-                        <SwiperSlide>
-                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" className="w-full h-auto" />
-                        </SwiperSlide>
+
                   </Swiper>
 
                   <div className="pt-5 pb-5">
@@ -74,6 +74,7 @@ const Drung = () => {
                               <Scroll />
                         </div>
                   </div>
+                  <Swipe />
 
 
                   {/* Section with Description & Map */}
